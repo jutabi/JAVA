@@ -43,19 +43,10 @@ public class QuickSort {
         Random random = new Random();
         List<Integer> list = new ArrayList<Integer>();
 
-//        for(int i = 0; i < 10; i++) {
-//            list.add(random.nextInt(10));
-//        }
-        list.add(0);
-        list.add(7);
-        list.add(3);
-        list.add(0);
-        list.add(0);
-        list.add(0);
-        list.add(8);
-        list.add(1);
-        list.add(5);
-        list.add(2);
+        for(int i = 0; i < 10; i++) {
+            list.add(random.nextInt(10));
+        }
+
         System.out.println("before: " + list);
 
         list = quickSort.list_quick(list, 0, list.size() - 1);
