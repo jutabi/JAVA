@@ -29,8 +29,8 @@ public class QuickSort {
                 pivot = high;
             }
             QuickSort quickSort = new QuickSort();
-            quickSort.array_quick(arr, left, pivot - 1);
-            quickSort.array_quick(arr, pivot + 1, right);
+            arr= quickSort.array_quick(arr, left, pivot - 1);
+            arr= quickSort.array_quick(arr, pivot + 1, right);
         }
         return arr;
     }
