@@ -28,14 +28,14 @@ public class MergeSort {
                     temp.add(list.get(temp2));
                     temp2++;
                 }
-                if (temp1 == mid + 1) {
-                    for (int i = temp2; i <= right; i++) {
-                        temp.add(list.get(i));
-                    }
-                } else if (temp2 == right + 1) {
-                    for (int i = temp1; i <= mid; i++) {
-                        temp.add(list.get(i));
-                    }
+            }
+            if (temp1 == mid + 1) {
+                for (int i = temp2; i <= right; i++) {
+                    temp.add(list.get(i));
+                }
+            } else if (temp2 == right + 1) {
+                for (int i = temp1; i <= mid; i++) {
+                    temp.add(list.get(i));
                 }
             }
             for (int i = left, temp_cnt = 0;
@@ -71,7 +71,7 @@ public class MergeSort {
         Random random = new Random();
 
 
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < 10; i++) {
             list.add(random.nextInt(10));
         }
         List<Integer> origin_copy = new ArrayList<Integer>(list);
