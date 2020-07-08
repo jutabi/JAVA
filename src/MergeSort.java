@@ -63,7 +63,7 @@ public class MergeSort {
                 }
             }
         }
-        System.out.println("Matching rate: " + (origin.size() / cnt) * 100 + "%");
+        System.out.println("Matching rate: " + (cnt / origin.size()) * 100 + "%");
     }
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<Integer>();
