@@ -47,24 +47,6 @@ public class MergeSort {
 //        System.out.println(list + "\n");
         return list;
     }
-    public void accuracy_test(List<Integer> origin, List<Integer> sorted) {
-        int cnt = 0, temp1 = 0;
-        List<Integer> temp = new ArrayList<Integer>(sorted);
-
-        for (int i = temp1; i < origin.size(); i++) {
-            for (int j = 0; j < temp.size(); j++) {
-                if (temp.get(j).equals(origin.get(i))) {
-                    if (i < origin.size() - 1) {
-                        temp1++;
-                    }
-                    temp.remove(j);
-                    j = temp.size();
-                    cnt++;
-                }
-            }
-        }
-        System.out.println("Matching rate: " + (cnt / origin.size()) * 100 + "%");
-    }
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<Integer>();
         MergeSort mergeSort = new MergeSort();
@@ -80,6 +62,7 @@ public class MergeSort {
         list = mergeSort.list_merge(list, 0, list.size() - 1);
         System.out.println("after: " + list);
 
-        mergeSort.accuracy_test(origin_copy, list);
+        ListAccuracy listAccuracy = new ListAccuracy();
+        listAccuracy.accuracy_test(origin_copy, list);
     }
 }
