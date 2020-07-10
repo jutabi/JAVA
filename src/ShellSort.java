@@ -33,10 +33,10 @@ public class ShellSort {
                             int t = list.get(comp1);
                             list.set(comp1, list.get(comp2));
                             list.set(comp2, t);
+                            comp2 -= gap;
                         } else {
                             comp2 = 0;
                         }
-                        comp2 -= gap;
                     }
                 }
             }
