@@ -51,7 +51,7 @@ public class SelectionSort {
         }
 
         List<Integer> list = new ArrayList<Integer>();
-        for (int i = 0; i < 10; i ++) {
+        for (int i = 0; i < 10; i++) {
             list.add(random.nextInt(10));
         }
         System.out.println("\nbefore: " + list);

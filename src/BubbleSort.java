@@ -5,7 +5,7 @@ import java.util.Random;
 public class BubbleSort {
     public int[] array_bubble(int[] arr) {
         for (int i = arr.length - 1; i > 0; i--) {
-            for (int j = 0; j < arr.length - 1; j++) {
+            for (int j = 0; j < i; j++) {
                 if (arr[j] > arr[j + 1]) {
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
@@ -25,7 +25,7 @@ public class BubbleSort {
 
     public List<Integer> list_bubble(List<Integer> list) {
         for (int i = list.size() - 1; i > 0; i--) {
-            for (int j = 0; j < list.size() - 1; j++) {
+            for (int j = 0; j < i; j++) {
                 if(list.get(j) > list.get(j + 1)) {
                     int temp = list.get(j + 1);
                     list.set(j + 1, list.get(j));
