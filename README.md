@@ -9,6 +9,7 @@
 - [5. 쉘 정렬](./src/ShellSort.java)
   - [예제와 설명](./Example&explanation/ShellSort.md)
 - [6. 합병 정렬](./src/MergeSort.java)
+  - [예제와 설명](./Example&explanation/MergeSort.md)
 - [7. Min heap 정렬](./src/MinHeap.java)
 - [8. Max heap 정렬](./src/MaxHeap.java)
 - [9. 연결 리스트](./src/LinkedList/LinkedList.java)
