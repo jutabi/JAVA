@@ -1,6 +1,7 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class MaxHeap {
     List<Integer> list = new ArrayList<Integer>();
@@ -55,16 +56,14 @@ public class MaxHeap {
     }
     public static void main(String[] args) {
         MaxHeap maxHeap = new MaxHeap();
-        maxHeap.insert_node(2);
-        maxHeap.insert_node(3);
-        maxHeap.insert_node(5);
-        maxHeap.insert_node(1);
-        maxHeap.insert_node(7);
-        maxHeap.insert_node(6);
-        maxHeap.print_list();
-        maxHeap.delete_root();
-        maxHeap.print_list();
-        maxHeap.delete_root();
-        maxHeap.print_list();
+        Random random = new Random();
+
+        for (int i = 0; i < 6; i++) {
+            maxHeap.insert_node(random.nextInt(10));
+        }
+        for (int j = 0; j < 6; j++) {
+            maxHeap.print_list();
+            maxHeap.delete_root();
+        }
     }
 }
