@@ -9,9 +9,12 @@ public class InsertionSort {
             for (int j = i - 1; j >= 0; j--) {
                 if (value < arr[j]) {
                     arr[j + 1] = arr[j];
-                    arr[j] = value;
+                    if (j == 0) {
+                        arr[0] = value;
+                    }
                 } else {
-                    j = 0;
+                    arr[j + 1] = value;
+                    break;
                 }
             }
         }
@@ -29,11 +32,14 @@ public class InsertionSort {
         for (int i = 1; i < list.size(); i++) {
             int value = list.get(i);
             for (int j = i - 1; j >= 0; j--) {
-                if(value < list.get(j)) {
+                if (value < list.get(j)) {
                     list.set(j + 1, list.get(j));
-                    list.set(j, value);
+                    if (j == 0) {
+                        list.set(0, value);
+                    }
                 } else {
-                    j = 0;
+                    list.set(j + 1, value);
+                    break;
                 }
             }
         }
