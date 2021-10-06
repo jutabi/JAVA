@@ -3,6 +3,7 @@
 - [1. 선택 정렬](./src/SelectionSort.java)
   - [예제와 설명](./Example&explanation/SelectionSort.md)
 - [2. 버블 정렬](./src/BubbleSort.java)
+  - [예제와 설명](./Example&explanation/BubbleSort.md)
 - [3. 퀵 정렬](./src/QuickSort.java)
   - [예제와 설명](./Example&explanation/QuickSort.md)
 - [4. 삽입 정렬](./src/InsertionSort.java)
