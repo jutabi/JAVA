@@ -5,18 +5,11 @@ import java.util.Random;
 public class InsertionSort {
     public int[] array_insertion(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
-            int value = arr[i];
-            for (int j = i - 1; j >= 0; j--) {
-                if (value < arr[j]) {
-                    arr[j + 1] = arr[j];
-                    if (j == 0) {
-                        arr[0] = value;
-                    }
-                } else {
-                    arr[j + 1] = value;
-                    break;
-                }
+            int j, value = arr[i];
+            for (j = i - 1; j >=0 && arr[j] > value; j--) {
+                arr[j + 1] = arr[j];
             }
+            arr[j + 1] = value;
         }
          return arr;
     }
@@ -30,18 +23,11 @@ public class InsertionSort {
 
     public List<Integer> list_insertion(List<Integer> list) {
         for (int i = 1; i < list.size(); i++) {
-            int value = list.get(i);
-            for (int j = i - 1; j >= 0; j--) {
-                if (value < list.get(j)) {
+            int j, value = list.get(i);
+            for (j = i - 1; j >= 0 && value < list.get(j); j--) {
                     list.set(j + 1, list.get(j));
-                    if (j == 0) {
-                        list.set(0, value);
-                    }
-                } else {
-                    list.set(j + 1, value);
-                    break;
-                }
             }
+            list.set(j + 1, value);
         }
         return list;
     }
