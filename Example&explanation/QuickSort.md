@@ -10,7 +10,7 @@ low가 right보다 작을 때 까지 low의 인덱스를 오른쪽으로 +1 해�
 6. high의 값(arr[high])이 pivot의 값(arr[pivot])보다 크고
 high가 left보다 클 때 까지 high의 인덱스를 왼쪽으로 -1 해준다.  
    (피봇의 값보다 작은 값을 left에 닿을 때 까지 오른쪽에서부터 찾는다.)
-7. low와 high의 이동이 끝났다면 (설령 값을 찾지 못하였더라도 "low는 high보다
+7. low와 high의 이동이 끝났다면 (설령 값을 찾지 못하였더라도 "low는 right보다
 작을 때까지, high는 left보다 클 때까지 이동"이라는 조건때문에 이동이 끝나게 
 되어있다.) low의 인덱스가 high의 인덱스보다 작은지 확인한다.
     - low의 인덱스가 high보다 작다면 서로의 값 (arr[left], arr[right])을 교환
