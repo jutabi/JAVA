@@ -20,4 +20,11 @@ public class ListAccuracy {
         }
         System.out.println("Matching rate: " + (cnt / origin.size()) * 100 + "%");
     }
+
+    public void array_print(int[] arr) {
+        for (int i : arr) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    }
 }
